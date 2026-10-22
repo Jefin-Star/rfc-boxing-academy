@@ -1,0 +1,6 @@
+{
+  "name": "RFC BOXING ACADEMY",
+  "description": "Official website for RFC Boxing Academy - Boxing, MMA, Strength Training, and Fitness Coaching. Build your strength, transform your life.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
