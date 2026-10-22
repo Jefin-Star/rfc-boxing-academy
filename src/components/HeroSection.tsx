@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Flame, Shield, Award, ChevronDown } from 'lucide-react';
 import { GYM_CONTACT } from '../data/gymData';
+import heroGymImage from '../assets/images/hero_gym_boxing_1792668730854.jpg';
 
 interface HeroSectionProps {
   onJoinClick: () => void;
@@ -16,7 +17,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background Image with Measured Contrast Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_gym_boxing_1792668730854.jpg"
+          src={heroGymImage}
           alt="RFC Boxing Academy Training Arena"
           className="w-full h-full object-cover object-center scale-105 transform motion-safe:animate-none"
           referrerPolicy="no-referrer"

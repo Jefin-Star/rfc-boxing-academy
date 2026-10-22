@@ -1,6 +1,8 @@
 import React from 'react';
 import { Dumbbell, Target, Users, Zap, CheckCircle2 } from 'lucide-react';
 import { ACADEMY_HIGHLIGHTS } from '../data/gymData';
+import aboutFacilityImage from '../assets/images/about_facility_training_1792668731312.jpg';
+import mmaCageImage from '../assets/images/mma_cage_mat_facility_1792668731835.jpg';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -28,7 +30,7 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-6 flex flex-col gap-6">
             <div className="relative rounded-2xl overflow-hidden border border-neutral-800 shadow-2xl group min-h-[320px] sm:min-h-[400px]">
               <img
-                src="/src/assets/images/about_facility_training_1792668731312.jpg"
+                src={aboutFacilityImage}
                 alt="Boxing hand wrapping and training at RFC Boxing Academy"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
@@ -69,7 +71,7 @@ export const AboutSection: React.FC = () => {
 
               <div className="relative rounded-xl overflow-hidden border border-neutral-800 min-h-[180px] group">
                 <img
-                  src="/src/assets/images/mma_cage_mat_facility_1792668731835.jpg"
+                  src={mmaCageImage}
                   alt="RFC Academy Combat Mats and Cage Area"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
