@@ -20,8 +20,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
 
   const navLinks = [
     { label: 'About', href: '#about' },
+    { label: 'Head Coach', href: '#coach' },
     { label: 'Programs & Plans', href: '#plans' },
-    { label: 'Schedule', href: '#schedule' },
     { label: 'BMI Tool', href: '#bmi-calculator' },
     { label: 'Register', href: '#register' },
     { label: 'Contact', href: '#contact' },

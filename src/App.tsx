@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
+import { CoachSection } from './components/CoachSection';
 import { MembershipSection } from './components/MembershipSection';
 import { BmiCalculatorSection } from './components/BmiCalculatorSection';
 import { RegistrationSection } from './components/RegistrationSection';
@@ -40,6 +41,13 @@ export default function App() {
     scrollToSection('register');
   };
 
+  const handleTrainWithCoach = () => {
+    setSelectedPlanId('pt-boxing-1m');
+    setSelectedDuration('1 Month');
+    setInitialGoals('Requesting direct 1-on-1 mentorship & personal training under Coach Sayid Ahammed Nisar.');
+    scrollToSection('register');
+  };
+
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 flex flex-col font-sans selection:bg-red-600 selection:text-white">
       {/* Top Navigation */}
@@ -56,7 +64,10 @@ export default function App() {
         {/* 2. About Our Gym Section */}
         <AboutSection />
 
-        {/* 3. Membership Plans & Schedule Section */}
+        {/* 3. Head Coach & Founder Section */}
+        <CoachSection onTrainWithCoachClick={handleTrainWithCoach} />
+
+        {/* 4. Membership Plans & Schedule Section */}
         <MembershipSection onSelectPlan={handlePlanSelect} />
 
         {/* 4. BMI Assessment & Combat Focus Calculator */}
